@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "@types/node": "14.0.14",
+    "@typescript-eslint/eslint-plugin": "3.4.0",
+    "@typescript-eslint/parser": "3.4.0",
+    "eslint": "7.3.1",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-import": "2.21.2",
+    "eslint-plugin-prettier": "3.1.4",
+    "prettier": "2.0.5",
+    "typescript": "3.9.5",
+    "typescript-deno-plugin": "1.31.0"
+  },
+  "scripts": {
+    "build": "deno bundle ./mod.ts ./vicis.bundle.js",
+    "format:check": "deno fmt ./src --check",
+    "format:package": "deno fmt ./deps.ts && deno fmt ./mod.ts && deno fmt ./test.ts",
+    "format:source": "deno fmt ./src",
+    "lint:check": "eslint ./src/**/*.ts",
+    "lint:fix": "eslint ./src/**/*.ts --fix",
+    "lint:deno": "deno lint --unstable ./src",
+    "package:upgrade": "npx npm-check --update",
+    "run": "deno run  --allow-all --unstable -c tsconfig.json mod.ts",
+    "test": "deno test ./test.ts"
+  }
+}

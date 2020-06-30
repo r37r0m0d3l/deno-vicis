@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "emitDecoratorMetadata": false,
+    "experimentalDecorators": false,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "plugins": [
+      {
+        "enable": true,
+        "importmap": "import_map.json",
+        "name": "typescript-deno-plugin"
+      }
+    ],
+    "resolveJsonModule": false,
+    "strict": true
+  }
+}
