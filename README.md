@@ -9,7 +9,7 @@ Presentation and transformation layer for data output in RESTful APIs.
 This is Deno analogue to these libraries: 🐘 [Fractal](https://fractal.thephpleague.com/) for PHP, 💎 [Roar](https://github.com/trailblazer/roar) for Ruby, 🍢 [Marshmallow](https://marshmallow.readthedocs.io/en/stable/) for Python.
 
 [![Buy Me A Coffee][buymeacoffee-img]][buymeacoffee-url]
-![Tests](https://github.com/r37r0m0d3l/denof/workflows/Tests/badge.svg)
+![Tests](https://github.com/r37r0m0d3l/deno-vicis/workflows/Tests/badge.svg)
 
 ---
 
@@ -53,27 +53,18 @@ Output:
 }
 ```
 
-## ⚙️Installation
+## ⚙️Install
 
-### Inline
+### Import from URL
 
-```javascript
+```typescript
+// From URL
 import { Vicis } from "https://deno.land/x/vicis/mod.ts";
+// Bundled from URL
+import { Vicis } from "https://deno.land/x/vicis/vicis.bundle.js";
 ```
 
-### "importmap.json"
-
-#### GitHub
-
-```json
-{
-  "imports": {
-    "vicis": "https://raw.githubusercontent.com/r37r0m0d3l/deno-vicis/master/mod.ts"
-  }
-}
-```
-
-#### DenoLand
+### Import from "importmap.json"
 
 ```json
 {
@@ -81,6 +72,10 @@ import { Vicis } from "https://deno.land/x/vicis/mod.ts";
     "vicis": "https://deno.land/x/vicis/mod.ts"
   }
 }
+```
+
+```typescript
+import { Vicis } from "vicis";
 ```
 
 ```bash
