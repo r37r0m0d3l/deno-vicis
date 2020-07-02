@@ -55,7 +55,15 @@ Output:
 
 ## ⚙️Installation
 
-**importmap.json**
+### Inline
+
+```javascript
+import { Vicis } from "https://deno.land/x/vicis/mod.ts";
+```
+
+### "importmap.json"
+
+#### GitHub
 
 ```json
 {
@@ -65,10 +73,19 @@ Output:
 }
 ```
 
+#### DenoLand
+
+```json
+{
+  "imports": {
+    "vicis": "https://deno.land/x/vicis/mod.ts"
+  }
+}
+```
+
 ```bash
 deno run --importmap=importmap.json --unstable your-script.js
 ```
-
 
 ## 🗺️ My other projects
 
