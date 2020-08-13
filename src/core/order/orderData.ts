@@ -18,7 +18,7 @@ import { objectKeysOrder } from "../../util/object/keys/order.ts";
 export function orderData(
   propertiesToStreamline: IOrder,
   data: IObject,
-  sort: ESort = ESort.Default,
+  sort: boolean | ESort = ESort.Default,
 ): IObject {
   if (arrayIsEmpty(propertiesToStreamline)) {
     return data;
