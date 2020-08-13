@@ -3,6 +3,7 @@
     "allowJs": false,
     "emitDecoratorMetadata": false,
     "experimentalDecorators": false,
+    "lib": ["es2017.object"],
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "plugins": [
